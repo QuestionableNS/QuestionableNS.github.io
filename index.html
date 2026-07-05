@@ -313,7 +313,7 @@
 
           // Get the total number of checked boxes
           const totalChecked = checkedBoxes.length;
-          const percentage = Math.round((totalChecked / 66) * 100);
+          const percentage = 100 - Math.round((totalChecked / 66) * 100);
 
           // Display the total inside the text paragraph
           resultText.textContent = `Your Filipino rice purity score is ${percentage}`;
